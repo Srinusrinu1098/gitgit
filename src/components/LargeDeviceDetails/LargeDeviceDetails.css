@@ -3,17 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px;
+  padding: 12px;
   cursor: pointer;
-  width: 100%; /* Ensure it stretches across the available space */
-  box-sizing: border-box; /* To prevent overflow */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .songItem {
   display: flex;
   align-items: center;
-  min-width: 170px; /* Control the width of the left section */
-  flex-grow: 1; /* Make sure it takes up available space */
+  min-width: 170px;
+  flex-grow: 1;
 }
 
 .songIndex {
@@ -24,15 +24,15 @@
   min-width: 199px;
   max-width: 200px;
   overflow: hidden;
-  text-overflow: ellipsis; /* Add ellipsis for long names */
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .songDuration,
 .songArtist,
 .songTime {
-  text-align: center; /* Align these text items at the center */
-  flex-grow: 1; /* Allow these items to grow and fill space evenly */
+  text-align: center;
+  flex-grow: 1;
   min-width: 90px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -40,7 +40,7 @@
 }
 
 .songDuration {
-  padding-left: 24px; /* Add space to the left */
+  padding-left: 24px;
 }
 
 .songArtist {

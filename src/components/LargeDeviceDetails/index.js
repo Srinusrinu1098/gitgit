@@ -1,9 +1,11 @@
 import './LargeDeviceDetails.css'
+import {formatDistanceToNow} from 'date-fns'
 import SongContexts from '../../SongContext/SongContexts'
 
 const LargeDeviceDetails = props => {
   const {value, number} = props
   const {songName, song, duration, artist, addedAt} = value
+  const latest = formatDistanceToNow(new Date(addedAt))
 
   const seconds = duration / 1000
   const minutes = Math.floor(seconds / 60)
@@ -29,7 +31,7 @@ const LargeDeviceDetails = props => {
               {minutes}:{last}
             </p>
             <p className="songArtist">{artist}</p>
-            <p className="songTime">1 min ago</p>
+            <p className="songTime">{latest} ago</p>
           </li>
         )
       }}
