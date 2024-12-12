@@ -1,0 +1,52 @@
+.smallList1 {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  cursor: pointer;
+  width: 100%; /* Ensure it stretches across the available space */
+  box-sizing: border-box; /* To prevent overflow */
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  min-width: 170px; /* Control the width of the left section */
+  flex-grow: 1; /* Make sure it takes up available space */
+}
+
+.songIndex {
+  padding-right: 14px;
+}
+
+.songName {
+  min-width: 199px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for long names */
+  white-space: nowrap;
+}
+
+.songDuration,
+.songArtist,
+.songTime {
+  text-align: center; /* Align these text items at the center */
+  flex-grow: 1; /* Allow these items to grow and fill space evenly */
+  min-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.songDuration {
+  padding-left: 24px; /* Add space to the left */
+}
+
+.songArtist {
+  max-width: 100px;
+}
+
+.songTime {
+  flex-grow: 1;
+}
